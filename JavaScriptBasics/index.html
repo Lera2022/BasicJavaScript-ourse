@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script async src="main.js"></script> -->
+    <!-- <script defer src="main1.js"></script>
+    <script defer src="main2.js"></script> -->
+</head>
+<body>
+    <!-- <h1>Всем привет!</h1>
+    <p>Надеюсь, вам понравится базовый курс JavaScript :)</p> -->
+    <!-- <script src="main.js"></script> -->
+    <script>
+        // let a = 1;
+        // alert(a);   // 1
+        // const a = 1;
+        // Просим ввести число
+        // const a = prompt('Введите число.');
+        // console.log(a);
+        // const usersFavoriteNumber = 5, asd = 10;
+        /*
+        rtyughjk jpfghjkl yuiop[
+            jkl; hjkl
+            hjkl; nm,
+        ]
+        */
+        // a = 5;
+        // alert(a);   // 5
+        // console.log(a);
+        // let b = 5;
+        // alert(b);   // 5
+
+        // string
+
+        // const str1 = 'Привет, мир!';
+        // const str2 = "Привет, мир!";
+        // const str3 = `Привет, мир!`;
+
+        // const applesCount = 5;
+        // console.log('У меня есть ' + applesCount + ' яблок.');
+        // console.log("У меня есть " + applesCount + " яблок.");
+        // console.log(`У меня есть ` + applesCount + ` яблок.`);
+        // console.log(`У меня есть ${applesCount} яблок.`);
+
+//         console.log('asdfg\nhjkl;');
+//         console.log(`asdfg
+// hjkl;`);
+
+//         console.log('sdfghjkl ertyui sdfghjk derftyuio defrgthyjuki edrftyuik dfghjk \
+// asdfghjkl wertyuio sdfghjk');
+//         console.log('sdfghjkl ertyui sdfghjk derftyuio defrgthyjuki edrftyuik dfghjk ' +
+//             'asdfghjkl wertyuio sdfghjk');
+
+        // console.log('Он сказал - "Привет".');
+        // console.log("Он сказал - 'Привет'.");
+        // console.log("Он сказал - \"Привет\".");
+        // console.log('Он сказал - \'Привет\'.');
+
+        // const str = "qwertyuio sdfghjkl";
+        // console.log(str.length);
+
+        // number
+
+        // const a = 5;
+        // const PI = 3.14;
+
+        // const inf = Infinity;
+        // console.log(10 / 0);
+        // console.log(10 / -0);
+        // console.log('Привет' * 10); // Nan
+
+        // const str = " 34.64 ";
+        // const str = "+34.64";
+        // const str = "-34.64";
+        // const str = "34.6asdfghj4";
+        // const str = "34px";
+
+        // // console.log("34.64");
+        // // console.log(34.64);
+        
+        // console.log(str);
+        // console.log(+str);
+        // console.log(-str);
+        // console.log(str * 1);
+        // console.log(Number(str));
+        // console.log(Number.parseInt(str));
+        // console.log(Number.parseFloat(str));
+        
+        // Math.round(23.44);  // 23
+        // Math.round(23.564);  // 24
+        // Math.floor(23.99564);  // 23
+        // Math.ceil(23.011564);  // 24
+        // Math.trunc(23.011564);  // 23
+        // Math.trunc(23.911564);  // 23
+
+        // const num = 23.2525;
+
+        // console.log(`Ваше число: ${num.toFixed(2)}`);   // Ваше число: 23.25
+        // console.log(`Ваше число: ${num.toFixed(8)}`);   // Ваше число: 23.25250000
+        // num.toFixed(8)  // '23.25250000'
+
+        // 100_000_000_000
+
+        // 0xFFAAC6    // 16755398
+        // 2e3         // 2000
+        // 2e-3        // 0.002
+
+        // bigint
+
+        // 2 ** 53         // 9007199254740992
+        // 2 ** 53 + 1     // 9007199254740992
+        // 2 ** 53 + 2     // 9007199254740994
+        // 2 ** 53 + 3     // 9007199254740996
+        // 23456789077777777777777777777777777209876543n * 23456789077777777777777777777777777209876543n
+        // 550220953839354850493827160493827133851548198110044639506172839506173162017985301630849n
+        // 5n / 2n  // 2n
+        // 5n + 2      // cannot mix BigInt and other types
+        // Number(5n) + 2  // 7
+        // 5n + BigInt(2)  // 7n
+
+        // boolean
+
+        // true
+        // false
+        // 5 > 2   // true
+        // 5 < 2   // false
+
+        // 100.24
+
+        // const money = 10024;
+
+        // // null
+
+        // // 0
+        // // null
+        // // " "
+        // // let a = null;
+
+        // let a;
+        // console.log(a);     // undefined
+
+        // symbol
+
+        // object
+
+        // const a = 5;
+        // console.log(typeof a);  // number
+        // const a = "5";
+        // console.log(typeof a);  // string
+        // const a = false;
+        // console.log(typeof a);  // boolean
+        // const a = null;
+        // console.log(typeof a);  // object
+        // const a = function(){};
+        // console.log(typeof a);  // function
+
+        // const a = 5;
+        // a.toFixed(2);
+
+        "use strict";   // a is not defined
+
+        // a = 5;
+        // console.log(a);
+
+        // const a = 1 + 5;
+
+        // console.log(6 + 4);
+        // console.log(6 - 4);
+        // console.log(6 * 4);
+        // console.log(6 / 4);
+        // console.log(6 ** 4);
+        // console.log(6 % 4);
+
+        // const a = 1;
+
+        // let a = 1;
+        // a += 2;         // a = a + 2;
+        // a -= 2;         // a = a - 2;
+        // a /= 2;         // a = a / 2;
+        // a **= 2;         // a = a ** 2;
+        // a %= 2;         // a = a % 2;
+        // console.log(a); // 3
+
+        // конкатенация
+        // console.log('йцукенгш' + "wertyuio");   // йцукенгшwertyuio
+        // console.log('1' + "1");   // "11"
+        // console.log('1' + 1);   // "11"
+        // console.log(1 + '1');   // "11"
+        // console.log(1 + 1);   // 2
+
+        // console.log(123);
+
+        // 5 > 5   // false
+        // 5 < 5   // false
+        // 5 >= 5   // true
+        // 5 <= 5   // true
+        // 5 == 5   // true
+        // 5 === 5   // true
+        // 5 == '5'   // true
+        // 5 === '5'   // false
+        // 5 != 5   // false
+        // 5 !== 5   // false
+        // 5 !== '3'   // true
+
+        // const a = '5';
+        // const b = 5;
+        // a === b; // false
+        // Number(a) === b; // true
+        // a === String(b); // true
+
+        // const a = 5;
+        // // const b = 3;
+        // const b = 3000;
+
+        // if (a > b) {
+        //     console.log('Переменная a больше чем переменная b.');
+        // }
+
+        // if (a > b && a > 10) {
+        //     console.log('...');
+        // }
+        
+        // if (a > b || a > 10) {
+        //     console.log('...');
+        // }
+
+        // const userHasAccess = false;
+        const userHasAccess = true;
+
+        if (userHasAccess === false) {
+            console.log('Доступ запрещён.');
+        }
+        
+        if (!userHasAccess) {
+            console.log('Доступ запрещён.');
+        }
+
+        !true   // false
+        !false  // true
+
+    </script>
+</body>
+</html>
