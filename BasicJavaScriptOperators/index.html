@@ -1,17 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        "use strict";
+      "use strict";
 
-        const goodsCount = 1;
-        console.log(`Количество товаров в корзине: ${goodsCount});
+      // const goodsCount = 10;
+      // if (goodsCount > 0) {
+      //     console.log(`Количество товаров в корзине: ${goodsCount}`);
+      //     // console.log(`Количество товаров в корзине: ${goodsCount}`);
+      //     // console.log(`Количество товаров в корзине: ${goodsCount}`);
+      //     // console.log(`Количество товаров в корзине: ${goodsCount}`);
+      // } else {
+      //     console.log('Корзина пуста.');
+      //     // console.log('Корзина пуста.');
+      //     // console.log('Корзина пуста.');
+      // }
+
+      // goodsCount > 0
+      //   ? console.log(`Количество товаров в корзине: ${goodsCount}`)
+      //   : console.log('Корзина пуста.');
+
+      //   console.log(
+      //     goodsCount > 0
+      //       ? `Количество товаров в корзине: ${goodsCount}`
+      //       : 'Корзина пуста.'
+      //   );
+
+      // if (goodsCount === 0) {
+      //     console.log('Корзина пуста.');
+      // }
+
+      // Boolean(5);     // true
+      // Boolean(-5);    // true
+      // Boolean(0);     // false
+
+      // const a = +prompt();
+
+      //   const product = "Яблоки";
+      //   if (product === "Бананы") {
+      //     console.log("Цена на бананы 50 руб./кг.");
+      //   } else if (product === "Манго") {
+      //     console.log("Манго стоит 80 руб./кг.");
+      //   } else if (product === "Яблоки" || product === "Груши"
+      //    || product === "Груши1" || product === "Груши2") {
+      //     console.log("На яблоки и груши одна цена - 40 руб./кг.");
+      //   } else {
+      //     console.log("Неизвестный фрукт.");
+      //   }
+
+      // const product = "Яблоки";
+      // switch (product) {
+      //   case "Бананы":
+      //     console.log("Цена на бананы 50 руб./кг.");
+      //     break;
+      //   case "Манго":
+      //     console.log("Манго стоит 80 руб./кг.");
+      //     break;
+      //   case "Яблоки":
+      //   case "Яблоки1":
+      //   case "Яблоки2":
+      //   case "Яблоки3":
+      //   case "Яблочки":
+      //     // console.log("На яблоки и груши одна цена - 40 руб./кг.");
+      //     // break;
+      //   case "Груши":
+      //     console.log("На яблоки и груши одна цена - 40 руб./кг.");
+      //     break;
+      //   default:
+      //     console.log("Неизвестный фрукт.");
+      // }
+
+      // const num = 5;
+      // switch (true) {
+      //   case num === 1:
+      //     console.log("num равен 1");
+      //     break;
+      //   case num > 1 && num < 5:
+      //     console.log("num в пределах [2, 4]");
+      //     break;
+      //   case num >= 5:
+      //     console.log("num больше или равно 5");
+      //     break;
+      //   default:
+      //     console.log('Неверное число');
+      // }
+
+      // alert();
+      // prompt();
+      // console.log();
+
+      // function sayPrice() {
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      //   console.log("Цена на бананы 50 руб./кг.");
+      // }
+
+      // sayPrice();
+      // console.log('Привет');
+      // sayPrice();
+
+      // const name = prompt('Введите имя');
+
+      // function getPrice() {
+      //   const result = 50 + 50;
+      //   return result;
+      // }
+
+      // const price = getPrice();
+      // console.log(`Цена: ${price}`);
+
+      // const product1 = 'Яблоки';
+      // const product1Count = 5;
+
+      // const product2 = 'Авокадо';
+      // const product2Count = 10;
+
+      // const product1TotalPrice = getProductPriceByCount(product1, product1Count);
+      // const product2TotalPrice = getProductPriceByCount(product2, product2Count);
+
+      // console.log(`${product1} ${product1Count}кг стоит ${product1TotalPrice}`);
+      // alert(`${product2} ${product2Count}кг стоит ${product2TotalPrice}`);
+
+      // function getProductPriceByCount (productName, count) {
+      //   return getProductPrice(productName) * count;
+      // }
+
+      // // console.log(getProductPrice(product));
+      // // alert(getProductPrice('Манго'));
+
+      // // const myProduct = 'Груши';
+      // // product = myProduct;
+      // // sayPrice();
+
+      // function getProductPrice(productName) {
+      //   switch (productName) {
+      //     case "Бананы":
+      //       // console.log("Цена на бананы 50 руб./кг.");
+      //       return 50;
+      //       // break;
+      //     case "Манго":
+      //       // console.log("Манго стоит 80 руб./кг.");
+      //       return 80;
+      //       // break;
+      //     case "Яблоки":
+      //     case "Яблоки1":
+      //     case "Яблоки2":
+      //     case "Яблоки3":
+      //     case "Яблочки":
+      //     case "Груши":
+      //       // console.log("На яблоки и груши одна цена - 40 руб./кг.");
+      //       return 40;
+      //       // break;
+      //     default:
+      //       // console.log("Неизвестный фрукт.");
+      //       // return null;
+      //       // return false;
+      //       return NaN;
+      //   }
+      // }
     </script>
-</body>
+  </body>
 </html>
