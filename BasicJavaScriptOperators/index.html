@@ -169,6 +169,133 @@
       //       return NaN;
       //   }
       // }
+
+      // const name = 'Pavel';
+      // const age = 32;
+
+      // function sayPrice() {
+      //   console.log('afsdfgh');
+      // }
+
+      //   function calculateSum() {
+      //     // ...
+      //     return 5;
+      //   }
+
+      //   const sum = calculateSum();
+
+      // fn();
+
+      // // function declaration
+      // function fn() {
+      //   // ...
+      // }
+
+      // fn();
+
+      // // --------------------
+
+      // // fn2(); // !!! Error
+
+      // // function expression
+      // const fn2 = function() {
+      //   // ...
+      // };
+
+      // fn2();
+
+      // const fn3 = () => {
+      //   console.log(123);
+      // };
+
+      // const fn33 = function () {
+      //   console.log(123);
+      // };
+
+      // const fn4 = () => console.log(123);
+
+      // function fn() {
+        
+      // }
+
+      // console.log(fn());  // undefined
+
+      // function fn(a) {
+      //   console.log(a);
+      // }
+
+      // fn();           // undefined
+      // fn(5, 10, 25);  // 5
+
+      // function fn(a, b, c) {
+      //   console.log(a, b, c);
+      // }
+
+      // fn(5);          // 5 undefined undefined
+
+      // function fn(a) {
+      //   if (a === undefined) {
+      //     a = 100;
+      //   }
+      //   console.log(a);
+      // }
+
+      // function fn(a = 100) {  // a = a || 100;    a = a ?? 100;
+      //   console.log(a);
+      // }
+
+      // fn(5);
+      // fn();           // 100
+
+      // a > 5 && b < 100 && c === 5
+      // 5 && 'asd' && NaN && true   // NaN
+      // 5 && 'asd' && 66 && true    // true
+      // 0 || false || 66 || ''      // 66
+      // 0 || false || NaN || ''      // ''
+
+      // function isPositive(num) {
+      // //   if (num > 0) {
+      // //     return true;
+      // //   } else {
+      // //     return false;
+      // //   }
+      // // }
+
+      // // if (num > 0) {
+      // //     return true;
+      // //   }
+      // //     return false;
+
+      // // return num > 0 ? true : false;
+
+      // return num > 0;
+      // }
+
+      // console.log(isPositive(5));   // true
+      // console.log(isPositive(-5));  // false
+
+      const age = Number(prompt("Введите ваш возраст"));
+      if (age < 18) {
+        alert("Вам скидка 10%");
+      } else if (age >= 18 && age < 60) {
+        alert("Вам скидка 20%");
+      } else if (age >= 60) {
+        alert("Вам скидка 30%");
+      } else {
+        alert("Нет такого возраста");
+      }
+
+      alert(
+        age < 18 
+          ? "Вам скидка 10%"
+          : age >= 18 && age < 60
+            ? "Вам скидка 20%"
+            : age >= 60
+              ? "Вам скидка 30%"
+              : "Нет такого возраста"
+      );
+      
+
     </script>
   </body>
 </html>
